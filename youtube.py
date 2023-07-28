@@ -9,7 +9,7 @@ youtube_video = YouTube(link)
 # for quality and video download
 videos = youtube_video.streams.all()  # all video  format
 # videos = youtube_video.streams.filter(only_audio=True)  # for only aduio
-videos = youtube_video.streams.filter(file_extension='mp4')  # for mp4
+#videos = youtube_video.streams.filter(file_extension='mp4')  # for mp4
 
 vid = list(enumerate(videos))
 for i in vid:
